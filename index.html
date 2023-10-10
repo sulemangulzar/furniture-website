@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POTENTIAL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Mooli&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        barlow: "'Barlow' , sans-serif",
+                    },
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+
+    </script>
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Mooli', sans-serif;
+            }
+        }
+        </style>
+</head>
+
+<body class="max-w-screen-2xl mx-auto">
+
+    <!-- mobile nav -->
+    <nav
+        class="mnav bg-teal-700 fixed w-[300px] top-0 h-screen shadow-2xl -left-[300px] lg:hidden transition-all duration-300 z-20">
+        <!-- close btn -->
+        <div
+            class="mnav__close-btn bg-gray-600 w-6 h-6 relative -right-full  top-8 flex items-center justify-between rounded-tr-lg rounded-br-lg cursor-pointer transition-all">
+            <i class="ri-arrow-right-s-line mnav__close-btn-icon text-2xl text-white fill-current cursor-pointer"></i>
+        </div>
+        <!-- logo -->
+        <h1 class="text-3xl text-center tracking-wide text-white font-semibold font-Barlow py-2
+        ">POTENTIAL</h1>
+        <!-- services -->
+        <ul class="flex flex-col gap-4 my-8 mx-2">
+            <li class="flex items-center gap-4">
+                <i class="ri-home-2-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+        " href="#">Home</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <i class="ri-question-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+        " href="#">About</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <i
+                    class="ri-shopping-cart-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+        " href="#">Shop</a>
+            </li>
+            <li class="flex items-center gap-4">
+                <i class="ri-contacts-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+        " href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="w-full h-screen md:h-[800px] lg:h-screen 2xl:h-[800px] bg-teal-700 lg:grid grid-cols-2">
+        <div class="w-full h-[300px] md:h-[400px] lg:h-screen 2xl:h-[800px]   bg-cover bg-center"
+            style="background-image: url('./images/furniture-back.jpg');">
+            <h1 class="text-2xl text-center lg:text-start tracking-wide text-gray-600 font-semibold font-Barlow py-2 lg:py-4 lg:px-4
+        ">POTENTIAL</h1>
+        </div>
+        <!-- lg nav -->
+        <div class="px-4 lg:px-8">
+            <ul class=" hidden lg:flex items-center justify-between py-4 px-8 xl:px-16 ">
+                <li> <a class=" text-lg tracking-wide text-white font-Barlow hover:text-yellow-500 " href=" #">Home</a>
+                </li>
+                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500
+        " href="#">About</a></li>
+                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500
+        " href="#">Shop</a></li>
+                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500
+                " href="#">Contact</a></li>
+            </ul>
+            <h1
+                class="text-4xl md:text-5xl text-white font-Barlow font-bold leading-12 my-8 text-center lg:text-start lg:text-4xl lg:mt-16 xl:text-5xl xl:mt-44 2xl:text-6xl">
+                Furniture
+                Collection For
+                Your Room
+            </h1>
+            <p
+                class="text-md md:text-xl text-white tracking-wide font-Barlow my-8 text-center lg:text-start lg:text-sm lg:leading-12 xl:text-md 2xl:text-lg">
+                It
+                provides a place to
+                sit, sleep,
+                eat, work,
+                and
+                store belongings. Without furniture, a room would be much less
+                functional and comfortable.</p>
+            <button
+                class="px-8 py-4 bg-yellow-500 my-12 mx-[110px] md:mx-[41%] lg:mx-0 text-sm md:text-md text-white font-Barlow tracking-wide">BUY
+                NOW</button>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
