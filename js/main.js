@@ -19,7 +19,7 @@ closeBtn.addEventListener('click', () => {
 
 const sr = ScrollReveal({
     origin: 'bottom',
-    distance: '100px',
+    distance: '60px',
     duration: 3000,
     delay: 600,
     // reset: true rest animation
@@ -27,10 +27,4 @@ const sr = ScrollReveal({
 
 sr.reveal('.hero-text', { origin: 'top' });
 
-
-sr.reveal('.services-item', {
-    delay: 600,
-    distance: 1000,
-    interval: 100,
-    origin: 'top',
-}); 
+sr.reveal(',item');

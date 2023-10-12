@@ -53,72 +53,197 @@
         <ul class="flex flex-col gap-4 my-8 mx-2">
             <li class="flex items-center gap-4">
                 <i class="ri-home-2-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
-                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
         " href="#">Home</a>
             </li>
             <li class="flex items-center gap-4">
                 <i class="ri-question-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
-                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
         " href="#">About</a>
             </li>
             <li class="flex items-center gap-4">
                 <i
                     class="ri-shopping-cart-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
-                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
         " href="#">Shop</a>
             </li>
             <li class="flex items-center gap-4">
                 <i class="ri-contacts-line text-2xl text-white fill-current cursor-pointer hover:text-yellow-500"></i>
-                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500
+                <a class="text-xl tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
         " href="#">Contact</a>
             </li>
         </ul>
     </nav>
-    <section class="w-full h-screen md:h-[800px] lg:h-screen 2xl:h-[800px] bg-teal-700 lg:grid grid-cols-2">
+    <section class="hero w-full h-screen md:h-[800px] lg:h-screen 2xl:h-[800px] bg-teal-700 lg:grid grid-cols-2">
         <div class="w-full h-[300px] md:h-[400px] lg:h-screen 2xl:h-[800px]   bg-cover bg-center"
             style="background-image: url('./images/furniture-back.jpg');">
             <h1 class="text-2xl text-center lg:text-start tracking-wide text-gray-600 font-semibold font-Barlow py-2 lg:py-4 lg:px-4
         ">POTENTIAL</h1>
         </div>
         <!-- lg nav -->
-        <div class="px-4 lg:px-8">
+        <div class=" px-4 lg:px-8">
             <ul class=" hidden lg:flex items-center justify-between py-4 px-8 xl:px-16 ">
-                <li> <a class=" text-lg tracking-wide text-white font-Barlow hover:text-yellow-500 " href=" #">Home</a>
+                <li> <a class=" text-lg tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300 "
+                        href=" #">Home</a>
                 </li>
-                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500
+                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
         " href="#">About</a></li>
-                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500
+                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
         " href="#">Shop</a></li>
-                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500
+                <li> <a class="text-lg tracking-wide text-white font-Barlow hover:text-yellow-500 transition-all duration-300
                 " href="#">Contact</a></li>
             </ul>
-            <h1
-                class="text-4xl md:text-5xl text-white font-Barlow font-bold leading-12 my-8 text-center lg:text-start lg:text-4xl lg:mt-16 xl:text-5xl xl:mt-44 2xl:text-6xl">
-                Furniture
-                Collection For
-                Your Room
-            </h1>
-            <p
-                class="text-md md:text-xl text-white tracking-wide font-Barlow my-8 text-center lg:text-start lg:text-sm lg:leading-12 xl:text-md 2xl:text-lg">
-                It
-                provides a place to
-                sit, sleep,
-                eat, work,
-                and
-                store belongings. Without furniture, a room would be much less
-                functional and comfortable.</p>
-            <button
-                class="px-8 py-4 bg-yellow-500 my-12 mx-[110px] md:mx-[41%] lg:mx-0 text-sm md:text-md text-white font-Barlow tracking-wide">BUY
-                NOW</button>
+            <div class="hero-text">
+                <h1
+                    class="text-4xl md:text-5xl text-white font-Barlow font-bold leading-12 my-8 text-center lg:text-start lg:text-4xl lg:mt-16 xl:text-5xl xl:mt-44 2xl:text-6xl">
+                    Furniture
+                    Collection For
+                    Your Room
+                </h1>
+                <p
+                    class="text-md md:text-xl text-white tracking-wide font-Barlow my-8 text-center lg:text-start lg:text-sm lg:leading-12 xl:text-md 2xl:text-lg">
+                    It
+                    provides a place to
+                    sit, sleep,
+                    eat, work,
+                    and
+                    store belongings. Without furniture, a room would be much less
+                    functional and comfortable.</p>
+                <button
+                    class="px-8 py-4 bg-yellow-500 my-12 mx-[110px] md:mx-[41%] lg:mx-0 text-sm md:text-md text-white font-Barlow tracking-wide">BUY
+                    NOW</button>
+            </div>
+        </div>
+    </section>
+    <!-- 2nd section -->
+    <section class="w-full h-[1030px] lg:h-screen xl:h-[600px] bg-lime-50">
+        <di class="container mx-auto flex flex-col gap-12 lg:grid lg:grid-cols-2 xl:grid-cols-4 xl:gap-2 xl:py-[200px]">
+            <!-- free services -->
+            <div class="services__item w-[300px] h-[220px] mx-auto text-center pt-12">
+                <div class="w-16 h-16 bg-lime-200/40 rounded-full mx-auto">
+                    <svg class="w-16 h-16 text-emerald-700 fill-current p-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12.0049 13.0029C13.6617 13.0029 15.0049 14.3461 15.0049 16.0029C15.0049 16.8521 14.6521 17.6188 14.0851 18.1646L12.175 20.0025L15.0049 20.0029V22.0029H9.00488L9.00398 20.2785L12.6983 16.7235C12.8874 16.5413 13.0049 16.2858 13.0049 16.0029C13.0049 15.4506 12.5572 15.0029 12.0049 15.0029C11.4526 15.0029 11.0049 15.4506 11.0049 16.0029H9.00488C9.00488 14.3461 10.348 13.0029 12.0049 13.0029ZM18.0049 13.0029V17.0029H20.0049V13.0029H22.0049V22.0029H20.0049V19.0029H16.0049V13.0029H18.0049ZM4.00488 12.0029C4.00488 14.5295 5.17612 16.7825 7.00527 18.2486L7.0049 20.6651C4.01588 18.9361 2.00488 15.7043 2.00488 12.0029H4.00488ZM12.0049 2.00293C17.1902 2.00293 21.4537 5.94955 21.9555 11.0028L19.943 11.003C19.4509 7.05664 16.0845 4.00293 12.0049 4.00293C9.2551 4.00293 6.82935 5.39027 5.3894 7.50317L8.00488 7.50293V9.50293H2.00488V3.50293H4.00488L4.00477 6.00211C5.82922 3.57368 8.73362 2.00293 12.0049 2.00293Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="">
+                    <p class="text-xl text-emerald-700 pt-4 font-semibold tracking-wide ">Free Services</p>
+                    <p class=" text-sm text-gray-700 pt-2 tracking-wide">These are services that offer a basic free
+                        version of their
+                        product
+                        with limited features.</p>
+                </div>
+            </div>
+            <!-- payment methd -->
+            <div class="services__item w-[300px] h-[220px] mx-auto text-center pt-12">
+                <div class="w-16 h-16 bg-violet-200/60 rounded-full mx-auto">
+                    <svg class="w-16 h-16 text-emerald-700 fill-current p-4" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M11.0049 2L18.3032 4.28071C18.7206 4.41117 19.0049 4.79781 19.0049 5.23519V7H21.0049C21.5572 7 22.0049 7.44772 22.0049 8V16C22.0049 16.5523 21.5572 17 21.0049 17L17.7848 17.0011C17.3982 17.5108 16.9276 17.9618 16.3849 18.3318L11.0049 22L5.62486 18.3318C3.98563 17.2141 3.00488 15.3584 3.00488 13.3744V5.23519C3.00488 4.79781 3.28913 4.41117 3.70661 4.28071L11.0049 2ZM11.0049 4.094L5.00488 5.97V13.3744C5.00488 14.6193 5.58406 15.7884 6.56329 16.5428L6.75154 16.6793L11.0049 19.579L14.7869 17H10.0049C9.4526 17 9.00488 16.5523 9.00488 16V8C9.00488 7.44772 9.4526 7 10.0049 7H17.0049V5.97L11.0049 4.094ZM11.0049 12V15H20.0049V12H11.0049ZM11.0049 10H20.0049V9H11.0049V10Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="">
+                    <p class="text-xl text-emerald-700 pt-4 font-semibold tracking-wide ">Payment Method</p>
+                    <p class=" text-sm text-gray-700 pt-2 tracking-wide">Transferring money from one bank account to
+                        another. This can be done through online banking.
+                    </p>
+                </div>
+            </div>
+            <!-- warranty -->
+            <div class="services__item w-[300px] h-[220px] mx-auto text-center pt-12">
+                <div class="w-16 h-16 bg-amber-200/40 rounded-full mx-auto">
+                    <svg class="w-16 h-16 text-emerald-700 fill-current p-4" xmlns="http://www.w3.org/2000/svg"
+                        height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z" />
+                    </svg>
+                </div>
+                <div class="">
+                    <p class="text-xl text-emerald-700 pt-4 font-semibold tracking-wide ">Warranty</p>
+                    <p class=" text-sm text-gray-700 pt-2 tracking-wide">This type of warranty is explicitly
+                        stated by the manufacturer or seller, either in writing or verbally.</p>
+                </div>
+            </div>
+            <!-- return policy -->
+            <div class="services__item w-[300px] h-[220px] mx-auto text-center pt-12">
+                <div class="w-16 h-16 bg-red-200/40 rounded-full mx-auto">
+                    <svg class="w-16 h-16 text-emerald-700 fill-current p-4" xmlns="http://www.w3.org/2000/svg"
+                        height="1em" viewBox="0 0 512 512">
+                        <path
+                            d="M48.5 224H40c-13.3 0-24-10.7-24-24V72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8H48.5z" />
+                    </svg>
+                </div>
+                <div class="">
+                    <p class="text-xl text-emerald-700 pt-4 font-semibold tracking-wide ">Return Policy</p>
+                    <p class=" text-sm text-gray-700 pt-2 tracking-wide">Most return policies include a timeframe during
+                        which customers
+                        can initiate a return.</p>
+                </div>
+            </div>
+            </div>
+    </section>
+    <!-- 3rd section-->
+    <section class="w-full h-auto md:h-[700px] xl:h-[700px] bg-lime-50 py-16 md:pt-8">
+        <h1 class="text-3xl text-center text-emerald-700 font-semibold tracking-wide">Categories</h1>
+        <p class="text-md text-center text-gray-600 py-4 tracking-wide px-2">Furniture can be categorized in various
+            ways
+            based on
+            different criteria, including
+            function, material, style, and more</p>
+        <div class=" flex flex-col gap-12 mt-12 lg:mt-4 md:flex-row md:gap-8 md:mx-24 lg:mx-44 2xl:mx-64 ">
+            <!-- chair -->
+            <div class=" relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] mx-auto">
+                <img class="w-full h-full " src="./images/chair.jpg" alt="CHAir">
+                <span class="absolute top-6 left-4">
+                    <p class="text-xl text-emerald-700 font-semibold">Chair</p>
+                    <p class="text-gray-700 my-2 underline  underline-offset-2">Shop Now</p>
+                </span>
+            </div>
+            <div
+                class="relative w-[300px] h-[500px] md:w-[180px] md:h-[400px] lg:w-[300px] lg:h-[450px] grid grid-rows-2 gap-y-6 mx-auto">
+                <!-- sofa -->
+                <div class="relative ">
+                    <img class="w-full h-[250px] md:h-[190px] lg:h-[210px] object-cover" src="./images/sofa.jpg"
+                        alt="CHAir">
+                    <span class="absolute top-6 left-4">
+                        <p class="text-xl md:text-lg text-emerald-700 font-semibold">Sofa</p>
+                        <p class="text-gray-700 my-1 underline  underline-offset-2">Shop Now</p>
+                    </span>
+                </div>
+                <!-- rack -->
+                <div class="relative ">
+                    <img class="w-full h-[250px] md:h-[190px] lg:h-[210px] object-cover" src="./images/rack.jpg"
+                        alt="CHAir">
+                    <span class="absolute top-6 left-4">
+                        <p class="text-xl md:text-lg text-emerald-700 font-semibold">Rack</p>
+                        <p class="text-gray-700 my-1 underline underline-offset-2">Shop Now</p>
+                    </span>
+                </div>
+            </div>
+            <!-- table -->
+            <div class="relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] mx-auto">
+                <img class="w-full h-full" src="./images/table.jpeg" alt="CHAir">
+                <span class="absolute top-6 left-4">
+                    <p class="text-xl text-emerald-700 font-semibold">Table</p>
+                    <p class="text-gray-700 my-2 underline  underline-offset-2">Shop Now</p>
+                </span>
+            </div>
+        </div>
+        <!-- button -->
+        <div class="my-8 mx-[110px] md:mx-[40%] lg:mx-[42%] xl:mx-[43%] 2xl:mx-[44%]">
+            <button class="px-12 py-4 bg-yellow-500 text-white text-md">View All</button>
         </div>
     </section>
 
 
 
 
-
-
-    <script src="main.js"></script>
+    <script src="./js/scrollreveal.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
