@@ -33,4 +33,37 @@ sr.reveal('.services-item', {
     distance: 1000,
     interval: 100,
     origin: 'top',
-}); 
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const swiperWrapper = document.getElementById("swiper-wrapper");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+
+    let currentIndex = 0;
+
+    const updateButtonsVisibility = () => {
+        prevButton.style.display = currentIndex > 0 ? "block" : "none";
+        nextButton.style.display = currentIndex < swiperWrapper.children.length - 1 ? "block" : "none";
+    };
+
+    const moveToSlide = (index) => {
+        if (index >= 0 && index < swiperWrapper.children.length) {
+            currentIndex = index;
+            const offset = -(currentIndex * (swiperWrapper.children[0].offsetWidth + 4)); // 4 is the margin
+            swiperWrapper.style.transform = `translateX(${offset}px)`;
+            updateButtonsVisibility();
+        }
+    };
+
+    prevButton.addEventListener("click", () => {
+        moveToSlide(currentIndex - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+        moveToSlide(currentIndex + 1);
+    });
+
+    updateButtonsVisibility();
+});

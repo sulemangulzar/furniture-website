@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Mooli&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap"
         rel="stylesheet">
@@ -21,7 +22,7 @@
                     },
                     colors: {
                         clifford: '#da373d',
-                    }
+                    },
                 }
             }
         }
@@ -74,7 +75,7 @@
             </li>
         </ul>
     </nav>
-    <section class="hero w-full h-[800px] md:h-[800px] lg:h-screen 2xl:h-[800px] bg-teal-700 lg:grid grid-cols-2">
+    <section class="hero w-full h-[800px]  lg:h-screen 2xl:h-[800px] bg-teal-700 lg:grid grid-cols-2">
         <div class="w-full h-[300px] md:h-[400px] lg:h-screen 2xl:h-[800px]   bg-cover bg-center"
             style="background-image: url('./images/furniture-back.jpg');">
             <h1 class="text-2xl text-center lg:text-start tracking-wide text-gray-600 font-semibold font-Barlow py-2 lg:py-4 lg:px-4
@@ -119,7 +120,8 @@
     </section>
     <!-- 2nd section -->
     <section class="w-full h-[1030px] lg:h-screen xl:h-[600px] bg-lime-50">
-        <di class="container mx-auto flex flex-col gap-12 lg:grid lg:grid-cols-2 xl:grid-cols-4 xl:gap-2 xl:py-[200px]">
+        <div
+            class="container mx-auto flex flex-col gap-12 lg:grid lg:grid-cols-2 xl:grid-cols-4 xl:gap-2 xl:py-[200px]">
             <!-- free services -->
             <div class="services__item w-[300px] h-[220px] mx-auto text-center pt-12">
                 <div class="w-16 h-16 bg-lime-200/40 rounded-full mx-auto">
@@ -186,68 +188,209 @@
                         can initiate a return.</p>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
     <!-- 3rd section-->
-    <section class="w-full h-auto md:h-[700px] xl:h-[700px] bg-lime-50 py-16 md:pt-8">
+    <section class="w-full h-auto md:h-[800px] bg-lime-50 py-16 md:pt-8">
         <h1 class="text-3xl text-center text-emerald-700 font-semibold tracking-wide">Categories</h1>
-        <p class="text-md text-center text-gray-600 py-4 tracking-wide px-2">Furniture can be categorized in various
+        <p class="text-md text-center text-gray-600 py-4 tracking-wide px-2 lg:px-16">Furniture can be categorized
+            in various
             ways
             based on
             different criteria, including
             function, material, style, and more</p>
-        <div class=" flex flex-col gap-12 mt-12 lg:mt-4 md:flex-row md:gap-8 md:mx-24 lg:mx-44 2xl:mx-64 ">
-            <!-- chair -->
-            <div class=" relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] mx-auto">
-                <img class="w-full h-full " src="./images/chair.jpg" alt="CHAir">
-                <span class="absolute top-6 left-4">
-                    <p class="text-xl text-emerald-700 font-semibold">Chair</p>
-                    <p class="text-gray-700 my-2 underline  underline-offset-2">Shop Now</p>
-                </span>
-            </div>
-            <div
-                class="relative w-[300px] h-[500px] md:w-[180px] md:h-[400px] lg:w-[300px] lg:h-[450px] grid grid-rows-2 gap-y-6 mx-auto">
+        <div class="lg:w-[900px] mx-auto flex flex-col items-center justify-between">
+            <div class=" flex flex-col gap-12 mt-12 lg:mt-4 md:flex-row md:gap-8 ">
+                <!-- chair -->
+                <div class=" relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] ">
+                    <img class="w-full h-full " src="./images/chair.jpg" alt="CHAir">
+                    <span class="absolute top-6 left-4">
+                        <p class="text-xl text-emerald-700 font-semibold">Chair</p>
+                        <p class="text-gray-700 my-2 underline  underline-offset-2">Shop Now</p>
+                    </span>
+                </div>
                 <!-- sofa -->
-                <div class="relative ">
-                    <img class="w-full h-[250px] md:h-[190px] lg:h-[210px] object-cover" src="./images/sofa.jpg"
-                        alt="CHAir">
-                    <span class="absolute top-6 left-4">
-                        <p class="text-xl md:text-lg text-emerald-700 font-semibold">Sofa</p>
-                        <p class="text-gray-700 my-1 underline  underline-offset-2">Shop Now</p>
-                    </span>
+                <div
+                    class="relative w-[300px] h-[500px] md:w-[180px] md:h-[400px] lg:w-[300px] lg:h-[450px] grid grid-rows-2 gap-y-6 ">
+                    <div class="relative ">
+                        <img class="w-full h-[250px] md:h-[190px] lg:h-[210px] object-cover" src="./images/sofa.jpg"
+                            alt="CHAir">
+                        <span class="absolute top-6 left-4">
+                            <p class="text-xl md:text-lg text-emerald-700 font-semibold">Sofa</p>
+                            <p class="text-gray-700 my-1 underline  underline-offset-2">Shop Now</p>
+                        </span>
+                    </div>
+                    <!-- rack -->
+                    <div class="relative ">
+                        <img class="w-full h-[250px] md:h-[190px] lg:h-[210px] object-cover" src="./images/rack.jpg"
+                            alt="CHAir">
+                        <span class="absolute top-6 left-4">
+                            <p class="text-xl md:text-lg text-emerald-700 font-semibold">Rack</p>
+                            <p class="text-gray-700 my-1 underline underline-offset-2">Shop Now</p>
+                        </span>
+                    </div>
                 </div>
-                <!-- rack -->
-                <div class="relative ">
-                    <img class="w-full h-[250px] md:h-[190px] lg:h-[210px] object-cover" src="./images/rack.jpg"
-                        alt="CHAir">
+                <!-- table -->
+                <div class="relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] ">
+                    <img class="w-full h-full" src="./images/table.jpeg" alt="CHAir">
                     <span class="absolute top-6 left-4">
-                        <p class="text-xl md:text-lg text-emerald-700 font-semibold">Rack</p>
-                        <p class="text-gray-700 my-1 underline underline-offset-2">Shop Now</p>
+                        <p class="text-xl text-emerald-700 font-semibold">Table</p>
+                        <p class="text-gray-700 my-2 underline  underline-offset-2">Shop Now</p>
                     </span>
                 </div>
             </div>
-            <!-- table -->
-            <div class="relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] mx-auto">
-                <img class="w-full h-full" src="./images/table.jpeg" alt="CHAir">
-                <span class="absolute top-6 left-4">
-                    <p class="text-xl text-emerald-700 font-semibold">Table</p>
-                    <p class="text-gray-700 my-2 underline  underline-offset-2">Shop Now</p>
-                </span>
+            <!-- button -->
+            <div class="flex items-center justify-between mx-auto">
+                <button class=" px-12 py-4 text-center bg-yellow-500 my-12 mx-auto lg:mx-0 text-sm md:text-md
+                text-white font-Barlow tracking-wide">View
+                    All</button>
             </div>
-        </div>
-        <!-- button -->
-        <div class="flex items-center justify-between">
-            <button
-                class="px-12 py-4 text-center bg-yellow-500 my-12 mx-auto lg:mx-0 text-sm md:text-md text-white font-Barlow tracking-wide">View
-                All</button>
         </div>
     </section>
-    <section></section>
+    <!-- 4th section -->
+    <section class="w-full h-auto md:h-[800px] bg-lime-50 py-8 md:pt-8">
+        <div class="lg:w-[900px] mx-auto">
+            <h1 class="text-3xl text-center lg:text-start text-emerald-700 font-semibold tracking-wide">
+                Latest
+                Collection</h1>
+            <p
+                class="text-md text-center lg:text-start lg:w-[600px]  text-gray-600 py-4 tracking-wide px-2 md:px-16 lg:px-0 ">
+                The lattest
+                collection can
+                encompass a wide range of furniture types such as sofa, tables, chairs, beds.</p>
+            <div class="flex flex-col items-center justify-between">
+                <div class=" flex flex-col gap-12 mt-12 lg:mt-4 md:flex-row md:gap-8 ">
+                    <!-- chair -->
+                    <div class=" relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] ">
+                        <img class="w-full h-full object-cover" src="./images/chair299.jpg" alt="CHAir">
+                        <div
+                            class="absolute w-[270px] md:w-[170px] h-24 lg:w-[270px] bg-white/60 backdrop-blur-2xl left-4 bottom-2 ">
+                            <span class="flex items-center justify-between px-4 py-4">
+                                <p class="text-lg md:text-sm lg:text-lg text-emerald-700 font-semibold">Chair</p>
+                                <p class="text-lg md:text-sm lg:text-lg text-emerald-700 font-semibold">$299</p>
+                            </span>
+
+                            <span class="flex items-center justify-betwe
+                        en px-4 ">
+                                <p class="text-sm md:text-xsm lg:text-sm text-gray-500">Jalme Hayan</p>
+                                <p class="text-sm md:text-xsm lg:text-sm text-gray-500">5 Gradients</p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class=" relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] ">
+                        <img class="w-full h-full object-cover" src="./images/chair249.jpg" alt="CHAir">
+                        <div
+                            class="absolute w-[270px] md:w-[170px] h-24 lg:w-[270px] bg-white/60 backdrop-blur-2xl left-4  bottom-2 ">
+                            <span class="flex items-center justify-between px-4 py-4">
+                                <p class="text-lg md:text-sm lg:text-lg text-emerald-700 font-semibold">Chair</p>
+                                <p class="text-lg md:text-sm lg:text-lg text-emerald-700 font-semibold">$249</p>
+                            </span>
+
+                            <span class="flex items-center justify-between px-4 ">
+                                <p class="text-sm md:text-xsm lg:text-sm text-gray-500">Jalme Hayan</p>
+                                <p class="text-sm md:text-xsm lg:text-sm text-gray-500">7 Gradients</p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- table -->
+                    <div class="relative w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] ">
+                        <img class="w-full h-full object-cover" src="./images/chair199.jpeg" alt="CHAir">
+                        <div
+                            class="absolute w-[270px] md:w-[170px] h-24 lg:w-[270px] bg-white/60 backdrop-blur-2xl left-4  bottom-2 ">
+                            <span class="flex items-center justify-between px-4 py-4">
+                                <p class="text-lg md:text-sm lg:text-lg text-emerald-700 font-semibold">Chair</p>
+                                <p class="text-lg md:text-sm lg:text-lg text-emerald-700 font-semibold">$199</p>
+                            </span>
+
+                            <span class="flex items-center justify-between px-4 ">
+                                <p class="text-sm md:text-xsm lg:text-sm text-gray-500">Jalme Hayan</p>
+                                <p class="text-sm md:text-xsm lg:text-sm text-gray-500">10 Gradients</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="flex items-center justify-between mx-auto">
+                    <button class=" px-12 py-4 text-center bg-yellow-500 my-12 mx-auto lg:mx-0 text-sm md:text-md
+                text-white font-Barlow tracking-wide">View
+                        All</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- 5th section -->
+    <section class="w-full md:h-[900px] bg-lime-50 pt-12">
+        <h1 class="text-3xl text-center text-emerald-700 font-semibold tracking-wide">Special Package</h1>
+        <p class="text-md text-center text-gray-600 py-4 tracking-wide px-2 md:px-24">These packages often
+            include
+            a
+            complete set of furniture for a specific room, such as a living room, bedroom, or dining room</p>
+        <div class="lg:w-[700px] mx-auto flex flex-col items-center justify-between">
+            <div class="container  mx-auto p-4">
+                <div class=" md:w-[700px] mx-auto flex overflow-x-scroll scrollbar-hide">
+
+                    <img class=" w-32 h-32 m-2" src="images/bed.jpg" alt="Image 1">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 2">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 3">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 2">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 3">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 1">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 2">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 3">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 2">
+
+                    <img class="w-32 h-32 m-2" src="images/bed.jpg" alt="Image 3">
+                </div>
+
+            </div>
+            <!-- 3 cols -->
+            <div class="pt-12 flex flex-col items-center justify-between md:flex-row  ">
+                <!-- 1 -->
+                <div class=" relative h-[500px] w-[300px] md:w-[300px] md:h-[400px] lg:w-[300px] lg:h-[450px]">
+                    <img class="w-full h-full object-cover" src="./images/chair299.jpg" alt="CHAir">
+                </div>
+                <!-- 2 -->
+                <div
+                    class="flex flex-col items-center justify-between gap-2 w-[300px] h-[500px] md:w-[200px] md:h-[400px] lg:w-[200px] lg:h-[450px] pt-12 md:pt-0 ">
+                    <img class="w-36 h-36 object-cover  " src="./images/chair299.jpg" alt="CHAir">
+                    <img class="w-36 h-36 object-cover  " src="./images/chair299.jpg" alt="CHAir">
+                    <img class="w-36 h-36 object-cover  " src="./images/chair299.jpg" alt="CHAir">
+                </div>
+                <div
+                    class="h-[500px] md:w-[200px] md:h-[400px] lg:w-[300px] lg:h-[450px] text-center md:text-start px-4 md:px-0">
+                    <h1 class="text-2xl text-emerald-700 font-semibold pt-12 md:pt-8 lg:pl-4">Shop Our Collection</h1>
+                    <p
+                        class="text-md md:text-sm lg:text-md text-gray-600 pt-6 leading-[35px] md:leading-0 lg:leading-[35px] lg:pl-4">
+                        Shopping an
+                        be done in
+                        physical
+                        brick-and
+                        mortar
+                        stores or
+                        through online platforms depending on
+                        individual preferences and convenience. These packages often include a complete set of furniture
+                        for
+                        a specific room, such as a living room, bedroom, or dining room</p>
+                    <button class=" px-12 py-4 text-center bg-yellow-500 my-4 mx-auto lg:mx-0 text-sm md:text-lg
+                        text-white font-Barlow tracking-wide lg:ml-4">ADD</button>
+                </div>
 
 
 
+    </section>
 
     <script src="./js/scrollreveal.min.js"></script>
+
     <script src="./js/main.js"></script>
 </body>
 
