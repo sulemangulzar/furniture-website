@@ -67,3 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateButtonsVisibility();
 });
+
+// swiper
+
+const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+});
